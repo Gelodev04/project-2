@@ -22,3 +22,8 @@ body{
 .font-grotesk {
   font-family: "Space Grotesk", sans-serif;
 }
+
+.web-width{
+    max-width: 690px;
+    margin: 0 auto;
+}
