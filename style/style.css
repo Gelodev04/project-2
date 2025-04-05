@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+@import "tailwindcss";
+
+
+*{
+   
+}
+
+body, html {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+
+  }
+
+body{
+  
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.font-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+}
