@@ -9,7 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header class="py-[10px] web-width">
+    <header
+      class="py-[10px] web-width px-4 md:px-0 border-b border-b-[#1818181A] md:border-0"
+    >
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-1 font-[700] text-[20px]">
           <img
@@ -20,7 +22,7 @@
           />
           <h1 class="font-grotesk">DiscussThatCoin</h1>
         </div>
-        <div class="space-x-1">
+        <div class="space-x-1 md:block hidden">
           <button
             class="bg-[#4AA9F8] text-white py-[7px] px-[20px] rounded-[5px] cursor-pointer text-[10px]"
           >
@@ -32,8 +34,36 @@
             Join The Community
           </button>
         </div>
+
+        <!-- MOBILE MENU -->
+        <div class="cursor-pointer md:hidden">
+          <svg
+            width="25"
+            viewBox="0 0 24 24"
+            fill="#248ADE"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="#248ADE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </div>
       </div>
-      <nav class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px]">
+      <nav
+        class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] hidden md:block"
+      >
         <ul class="flex items-center text-[12px] text-[#18181880] gap-4">
           <li>
             <a href="">Home</a>
@@ -59,7 +89,7 @@
 
     <!-- Main Content -->
 
-    <main>
+    <main class="px-4">
       <div
         class="flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem]"
       >
@@ -91,74 +121,69 @@
               alt="home-bg"
             />
             <!-- Floating Icons -->
-            <div class="absolute top-[7rem] left-[-2rem]">
-              <img
-                width="55"
-                src="/images/floatingicons/icon1.png"
-                alt="icon1"
-              />
-            </div>
-
-            <div class="absolute top-[-3.5rem] left-[1.5rem]">
-              <img
-                width="55"
-                src="/images/floatingicons/icon2.png"
-                alt="icon2"
-              />
-            </div>
-
-            <div class="absolute top-[2.3rem] left-[4.1rem]">
-              <img
-                width="60"
-                src="/images/floatingicons/icon3.png"
-                alt="icon3"
-              />
-            </div>
-
-            <div class="absolute top-[10rem] left-[11rem]">
-              <img
-                width="55"
-                src="/images/floatingicons/icon5.png"
-                alt="icon4"
-              />
-            </div>
-
-            <div class="absolute top-[8.5rem] left-[23rem]">
-              <img
-                width="55"
-                src="/images/floatingicons/icon6.png"
-                alt="icon5"
-              />
-            </div>
-
-            <div class="absolute top-[0.5rem] left-[27rem]">
-              <img
-                width="55"
-                src="/images/floatingicons/icon1.png"
-                alt="icon6"
-              />
-            </div>
-
-            <div class="absolute top-[10rem] right-[-0.6rem]">
-              <img
-                width="53"
-                src="/images/floatingicons/icon7.png"
-                alt="icon7"
-              />
-            </div>
-
-            <div class="absolute top-[-3rem] right-[-3.5rem]">
-              <img
-                width="53"
-                src="/images/floatingicons/icon8.png"
-                alt="icon8"
-              />
+            <div class="hidden md:block">
+              <div class="absolute top-[7rem] left-[-2rem]">
+                <img
+                  width="55"
+                  src="/images/floatingicons/icon1.png"
+                  alt="icon1"
+                />
+              </div>
+              <div class="absolute top-[-3.5rem] left-[1.5rem]">
+                <img
+                  width="55"
+                  src="/images/floatingicons/icon2.png"
+                  alt="icon2"
+                />
+              </div>
+              <div class="absolute top-[2.3rem] left-[4.1rem]">
+                <img
+                  width="60"
+                  src="/images/floatingicons/icon3.png"
+                  alt="icon3"
+                />
+              </div>
+              <div class="absolute top-[10rem] left-[11rem]">
+                <img
+                  width="55"
+                  src="/images/floatingicons/icon5.png"
+                  alt="icon4"
+                />
+              </div>
+              <div class="absolute top-[8.5rem] left-[23rem]">
+                <img
+                  width="55"
+                  src="/images/floatingicons/icon6.png"
+                  alt="icon5"
+                />
+              </div>
+              <div class="absolute top-[0.5rem] left-[27rem]">
+                <img
+                  width="55"
+                  src="/images/floatingicons/icon1.png"
+                  alt="icon6"
+                />
+              </div>
+              <div class="absolute top-[10rem] right-[-0.6rem]">
+                <img
+                  width="53"
+                  src="/images/floatingicons/icon7.png"
+                  alt="icon7"
+                />
+              </div>
+              <div class="absolute top-[-3rem] right-[-3.5rem]">
+                <img
+                  width="53"
+                  src="/images/floatingicons/icon8.png"
+                  alt="icon8"
+                />
+              </div>
             </div>
           </div>
         </div>
 
         <div
-          class="tab-content w-full mt-[2rem] text-[#181818] text-[13px]"
+          class="tab-content w-full mt-[2rem] text-[#181818] text-[13px] text-center md:text-start"
           id="utilityTabContent"
         >
           <h3 class="font-bold text-[17px]">What is Discuss that Coin?</h3>
@@ -230,40 +255,77 @@
         class="flex flex-col w-full items-center web-width text-[13px] text-[#282828] pb-[2rem]"
       >
         <h1 class="font-bold text-[17px] mt-[2rem] mb-[2rem]">How it works?</h1>
-        <ul class="flex gap-[3rem] items-center">
-          <li class="flex flex-col items-center text-center">
+        <ul
+          class="flex flex-wrap justify-between items-start relative gap-[3rem]"
+        >
+          <li
+            class="flex flex-col items-center text-center flex-1 min-w-[150px] relative"
+          >
             <div
               class="bg-[#9672FF] text-white size-[45px] flex items-center justify-center rounded-[10px]"
             >
               1
             </div>
             <h3 class="font-semibold mt-2">Lorem Ipsum</h3>
-            <p class="text-[#333333] text-[11px]">
+            <p class="text-[#333333] text-[11px] max-w-[180px]">
               Lorem ipsum dolor sit amet consectetur. Sed non amet feugiat
               fermentum risus.
             </p>
+            <!-- Divider -->
+            <div
+              class="absolute top-[1.4rem] right-[-4.3rem] w-[50%] border-t border-[#4DDFFD] border-dashed md:block hidden"
+            >
+              <!-- Left Circle -->
+              <div
+                class="absolute -left-[4px] top-[-3px] w-[6px] h-[6px] bg-[#9672FF] rounded-full"
+              ></div>
+
+              <!-- Right Circle -->
+              <div
+                class="absolute -right-[4px] top-[-3px] w-[6px] h-[6px] bg-[#4DDFFD] rounded-full"
+              ></div>
+            </div>
           </li>
 
-          <li class="flex flex-col items-center text-center">
+          <li
+            class="flex flex-col items-center text-center flex-1 min-w-[150px] relative"
+          >
             <div
               class="bg-[#4DDFFD] text-white size-[45px] flex items-center justify-center rounded-[10px]"
             >
               2
             </div>
             <h3 class="font-semibold mt-2">Lorem Ipsum</h3>
-            <p class="text-[#333333] text-[11px]">
+            <p class="text-[#333333] text-[11px] max-w-[180px]">
               Lorem ipsum dolor sit amet consectetur. Sed non amet feugiat
               fermentum risus.
             </p>
+            <!-- Divider -->
+            <div
+              class="absolute top-[1.4rem] right-[-4.3rem] w-[50%] border-t border-[#4DDFFD] border-dashed md:block hidden"
+            >
+              <!-- Left Circle -->
+              <div
+                class="absolute -left-[4px] top-[-3px] w-[6px] h-[6px] bg-[#4DDFFD] rounded-full"
+              ></div>
+
+              <!-- Right Circle -->
+              <div
+                class="absolute -right-[4px] top-[-3px] w-[6px] h-[6px] bg-[#FFAA00] rounded-full"
+              ></div>
+            </div>
           </li>
-          <li class="flex flex-col items-center text-center">
+
+          <li
+            class="flex flex-col items-center text-center flex-1 min-w-[150px]"
+          >
             <div
               class="bg-[#FBB72E] text-white size-[45px] flex items-center justify-center rounded-[10px]"
             >
               3
             </div>
             <h3 class="font-semibold mt-2">Lorem Ipsum</h3>
-            <p class="text-[#333333] text-[11px]">
+            <p class="text-[#333333] text-[11px] max-w-[180px]">
               Lorem ipsum dolor sit amet consectetur. Sed non amet feugiat
               fermentum risus.
             </p>
@@ -273,7 +335,7 @@
 
       <!-- FOOTER -->
 
-      <footer class="text-[70%] py-[12px] border-t-[2px] border-[#18181814]">
+      <footer class="text-[70%] py-[12px] border-t-[2px] border-[#18181814] hidden md:block">
         <div
           class="web-width flex justify-between w-full gap-[50px] items-start"
         >
