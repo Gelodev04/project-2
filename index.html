@@ -74,90 +74,67 @@
         </p>
       </div>
 
-      <section class="flex flex-col w-full items-center gap-5 web-width">
-        <div class="button-group">
-          <button class="tab-button active">The Utility</button>
-          <button class="tab-button">The Token</button>
+      <section class="flex flex-col w-full items-center web-width relative">
+        <div class="flex flex-col items-center relative">
+          <div class="button-group">
+            <button class="tab-button active" id="utilityTab">
+              The Utility
+            </button>
+            <button class="tab-button" id="tokenTab">The Token</button>
+          </div>
+
+          <div class="mt-[0.7rem] relative ">
+            <img
+            width="560"
+              class="background-image"
+              src="/images/home-bg.png"
+              alt="home-bg"
+            />
+            <!-- Floating Icons -->
+            <div class="absolute top-[7rem] left-[-2rem]">
+              <img width="55" src="/images/floatingicons/icon1.png" alt="icon1" />
+            </div>
+            
+            <div class="absolute top-[-3.5rem] left-[1.5rem]">
+              <img width="55" src="/images/floatingicons/icon2.png" alt="icon2" />
+            </div>
+          
+            <div class="absolute top-[2.3rem] left-[4.1rem]">
+              <img width="60" src="/images/floatingicons/icon3.png" alt="icon3" />
+            </div>
+
+            <div class="absolute top-[10rem] left-[11rem]">
+              <img width="55" src="/images/floatingicons/icon5.png" alt="icon4" />
+            </div>
+
+            <div class="absolute top-[8.5rem] left-[23rem]">
+              <img width="55" src="/images/floatingicons/icon6.png" alt="icon5" />
+            </div>
+
+            <div class="absolute top-[0.5rem] left-[27rem]">
+              <img width="55" src="/images/floatingicons/icon1.png" alt="icon6" />
+            </div>
+
+            <div class="absolute top-[10rem] right-[-0.6rem]">
+              <img width="53" src="/images/floatingicons/icon7.png" alt="icon7" />
+            </div>
+
+            <div class="absolute top-[-3rem] right-[-3.5rem]">
+              <img width="53" src="/images/floatingicons/icon8.png" alt="icon8" />
+            </div>
+          </div>
         </div>
-        
+
+        <div class="tab-content w-full mt-[2rem]" id="utilityTabContent">
+          <h3 class="font-bold text-[#181818]">What is Discuss that Coin?</h3>
+        </div>
+
+        <div class="tab-content" id="tokenTabContent" style="display: none">
+          <div>World</div>
+        </div>
       </section>
 
       <!-- What is DTC Token -->
-
-      <section class="py-[30px] text-[80%] bg-[#FFAA0014] mt-[10px]">
-        <div class="max-w-[750px] mx-auto">
-          <div class="text-center max-w-[600px] mx-auto space-y-[8px]">
-            <h1 class="font-bold text-[20px]">What is DTC Token</h1>
-            <p>
-              <span class="font-bold">DTC</span>
-              <span class="italic">(Discuss That Coin)</span> is the native
-              token of the platform. <br />
-              Users earn points by sharing honest reviews, ratings, and votes.
-              <br />These points can be converted into DTC, rewarding real
-              contributions with real value.
-            </p>
-          </div>
-          <div class="mt-[13px] space-y-[15px]">
-            <h3 class="font-bold text-[15px] text-center">
-              Here how’s it work!
-            </h3>
-            <ul class="flex text-[85%] gap-5">
-              <li
-                class="p-[15px] rounded-[8px] border-[#1818181A] border-[2px] bg-[#FFF6E9] space-y-[10px]"
-              >
-                <img
-                  width="35"
-                  src=" /images/howitworks/circle1.png"
-                  alt="number1"
-                />
-                <p class="text-[#181818]/90">
-                  Enter the contract address (CA) of the token you would like to
-                  see or join the discussion
-                </p>
-              </li>
-              <li
-                class="p-[15px] rounded-[8px] border-[#1818181A] border-[2px] bg-[#FFF6E9] space-y-[10px]"
-              >
-                <img
-                  width="35"
-                  src=" /images/howitworks/circle2.png"
-                  alt="number1"
-                />
-                <p class="text-[#181818]/90">
-                  Enter the contract address (CA) of the token you would like to
-                  see or join the discussion
-                </p>
-              </li>
-              <li
-                class="p-[15px] rounded-[8px] border-[#1818181A] border-[2px] bg-[#FFF6E9] space-y-[10px]"
-              >
-                <img
-                  width="35"
-                  src="/images/howitworks/circle3.png"
-                  alt="number1"
-                />
-                <p class="text-[#181818]/90">
-                  Enter the contract address (CA) of the token you would like to
-                  see or join the discussion
-                </p>
-              </li>
-              <li
-                class="p-[15px] rounded-[8px] border-[#1818181A] border-[2px] bg-[#FFF6E9] space-y-[10px]"
-              >
-                <img
-                  width="35"
-                  src=" /images/howitworks/circle4.png"
-                  alt="number1"
-                />
-                <p class="text-[#181818]/90">
-                  Enter the contract address (CA) of the token you would like to
-                  see or join the discussion
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
       <!-- FOOTER -->
 
