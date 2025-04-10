@@ -10,10 +10,12 @@
   </head>
   <body>
     <header
-      class="py-[10px] web-width px-4 md:px-0 border-b border-b-[#1818181A] md:border-0"
+      class="py-[10px] web-width border-b border-b-[#1818181A] sm:border-0"
     >
       <div class="flex items-center justify-between">
-        <div class="flex items-center gap-1 font-[700] text-[20px]">
+        <div
+          class="flex items-center gap-1 font-[700] text-[20px] px-4 md:px-0"
+        >
           <img
             width="40"
             src="/images/header/logo.png"
@@ -22,7 +24,7 @@
           />
           <h1 class="font-grotesk">DiscussThatCoin</h1>
         </div>
-        <div class="space-x-1 md:block hidden">
+        <div class="space-x-1 sm:block hidden px-4 md:px-0">
           <button
             class="bg-[#4AA9F8] text-white py-[7px] px-[20px] rounded-[5px] cursor-pointer text-[10px]"
           >
@@ -36,7 +38,7 @@
         </div>
 
         <!-- MOBILE MENU -->
-        <div class="cursor-pointer md:hidden">
+        <div class="cursor-pointer sm:hidden px-4 md:px-0">
           <svg
             width="25"
             viewBox="0 0 24 24"
@@ -62,9 +64,11 @@
         </div>
       </div>
       <nav
-        class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] hidden md:block"
+        class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] hidden sm:block"
       >
-        <ul class="flex items-center text-[12px] text-[#18181880] gap-4">
+        <ul
+          class="flex items-center text-[12px] text-[#18181880] gap-4 px-4 md:px-0"
+        >
           <li>
             <a href="">Home</a>
           </li>
@@ -89,9 +93,9 @@
 
     <!-- Main Content -->
 
-    <main class="px-4">
+    <main class="">
       <div
-        class="flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem]"
+        class="flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4"
       >
         <h1
           class="bg-gradient-to-r from-[#FFAA00] to-[#EF5601] bg-clip-text text-transparent font-[700] text-center text-[28px] leading-tight"
@@ -104,7 +108,7 @@
         </p>
       </div>
 
-      <section class="flex flex-col w-full items-center web-width relative">
+      <section class="flex flex-col w-full items-center web-width relative px-4">
         <div class="flex flex-col items-center relative">
           <div class="button-group">
             <button class="tab-button active" id="utilityTab">
@@ -121,7 +125,7 @@
               alt="home-bg"
             />
             <!-- Floating Icons -->
-            <div class="hidden md:block">
+            <div class="hidden sm:block">
               <div class="absolute top-[7rem] left-[-2rem]">
                 <img
                   width="55"
@@ -183,7 +187,7 @@
         </div>
 
         <div
-          class="tab-content w-full mt-[2rem] text-[#181818] text-[13px] text-center md:text-start"
+          class="tab-content w-full mt-[2rem] text-[#181818] text-[13px] text-center sm:text-start"
           id="utilityTabContent"
         >
           <h3 class="font-bold text-[17px]">What is Discuss that Coin?</h3>
@@ -252,7 +256,7 @@
       <!-- HOW IT WORKS -->
 
       <section
-        class="flex flex-col w-full items-center web-width text-[13px] text-[#282828] pb-[2rem]"
+        class="flex flex-col w-full items-center web-width text-[13px] text-[#282828] pb-[2rem] px-4"
       >
         <h1 class="font-bold text-[17px] mt-[2rem] mb-[2rem]">How it works?</h1>
         <ul
@@ -333,9 +337,52 @@
         </ul>
       </section>
 
+      <!-- MOBILE GET STARTED -->
+      <div class="sm:hidden border-t-[2px] border-[#18181814] py-[9px] ">
+        <div class="flex items-center gap-2  justify-center">
+          <button class="cursor-pointer">
+            <svg
+              width="25"
+              viewBox="0 0 24 24"
+              fill="#181818"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="Menu / Close_SM">
+                  <path
+                    id="Vector"
+                    d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16"
+                    stroke="#181818"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <div class="flex items-center gap-1 ">
+            <img width="42" class="" src="/images/header/logo.png" alt="logo" />
+            <div>
+              <p class="text-[#181818] font-medium text-[15px] whitespace-nowrap">Continue in Telegram Bot</p>
+              <p class="text-[#18181880] text-[13px] whitespace-nowrap">Join our community</p>
+            </div>
+            <button class="bg-[#248ADE] text-white py-[7px] px-4 text-[13px] rounded-[5px] ml-2 cursor-pointer whitespace-nowrap">Start Bot</button>
+          </div>  
+        </div>
+      </div>
+
       <!-- FOOTER -->
 
-      <footer class="text-[70%] py-[12px] border-t-[2px] border-[#18181814] hidden md:block">
+      <footer
+        class="text-[70%] py-[12px] border-t-[2px] border-[#18181814] hidden sm:block px-4"
+      >
         <div
           class="web-width flex justify-between w-full gap-[50px] items-start"
         >
