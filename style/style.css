@@ -27,3 +27,28 @@ body{
     max-width: 690px;
     margin: 0 auto;
 }
+
+
+.button-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #4AA9F840;
+  background-color: #4AA9F814;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.tab-button {
+  background: transparent;
+  color: #282828;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 16px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tab-button.active {
+  background-color: #4AA9F8;
+  color: white;
+}
