@@ -148,27 +148,42 @@
           </div>
 
           <div class="mt-[0.7rem] relative">
-            <div class="h-[300px] tab-content " id="utilityTabContent">
+            <div class="relative h-[300px] tab-content" id="utilityTabContent">
+              <!-- Flash image behind -->
               <img
-                width="550"
-                class="background-image "
+              
+                class="absolute z-0 "
+                src="/images/flash.png"
+                alt="flash"
+              />
+            
+              <!-- Foreground image (in front) -->
+              <img
+                width="500"
+                class="relative z-10"
                 src="/images/tokenbg.png"
                 alt="home-bg"
               />
-             
             </div>
-            <div
-              class="h-[300px] tab-content"
-              id="tokenTabContent"
-              style="display: none"
-            >
+            <div class="relative h-[300px] tab-content" id="tokenTabContent" style="display: none">
+              <!-- Flash image behind -->
               <img
-                width="550"
-                class="background-image"
+              
+                class="absolute z-0 "
+                src="/images/flash.png"
+                alt="flash"
+              />
+            
+              <!-- Foreground image (in front) -->
+              <img
+                width="500"
+                class="relative z-10"
                 src="/images/utilitybg.png"
                 alt="home-bg"
               />
             </div>
+            
+           
             <!-- Floating Icons -->
             <!-- <div class="hidden sm:block">
               <div class="absolute top-[7rem] left-[-2rem]">
