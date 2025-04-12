@@ -66,10 +66,10 @@
         </div>
       </div>
       <nav
-        class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] hidden sm:block"
+        class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] hidden sm:flex items-center justify-between  text-[12px]"
       >
         <ul
-          class="flex items-center text-[12px] text-[#18181880] gap-4 px-4 md:px-0"
+          class="flex items-center text-[#18181880] gap-4 px-4 md:px-0"
         >
           <li>
             <a href="">Home</a>
@@ -87,6 +87,14 @@
             <a href="">How To Earn</a>
           </li>
         </ul>
+
+        <div class="flex gap-1 items-center font-semibold text-[11px]" >
+          <img width="16" src="/images/RTC Nav/twemoji_coin.png" alt="token value"/>
+          <span class="">Token Value:</span>
+          <span class="text-[#298CDE]">0.35 TON</span>
+          <span class="text-[#18181840]">|</span>
+          <span class="text-[#00C807]">$0.0006</span>
+        </div>
       </nav>
     </header>
 
@@ -95,9 +103,10 @@
     <main class="">
       <!-- The token -->
       <div
-        class="tab-content flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4"
-        id="utilityTabContent"
-      >
+  class="tab-content flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4 h-auto sm:h-[100px]"
+  id="utilityTabContent"
+>
+
         <h1
           class="bg-gradient-to-r from-[#FFAA00] to-[#EF5601] bg-clip-text text-transparent font-[700] text-center text-[28px] leading-tight"
         >
@@ -112,7 +121,7 @@
 
       <!-- The utility -->
       <div
-        class="tab-content flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4"
+        class="tab-content flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4 h-auto sm:h-[100px]"
         id="tokenTabContent"
         style="display: none"
       >
@@ -123,7 +132,7 @@
         </h1>
         <p class="text-[13px] text-center text-[#282828]">
           <span class="font-bold">CA:</span>
-          0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3
+          <span>0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3</span>
         </p>
       </div>
 
@@ -139,12 +148,27 @@
           </div>
 
           <div class="mt-[0.7rem] relative">
-            <img
-              width="560"
-              class="background-image"
-              src="/images/home-bg.png"
-              alt="home-bg"
-            />
+            <div class="h-[300px] tab-content " id="utilityTabContent">
+              <img
+                width="550"
+                class="background-image "
+                src="/images/tokenbg.png"
+                alt="home-bg"
+              />
+             
+            </div>
+            <div
+              class="h-[300px] tab-content"
+              id="tokenTabContent"
+              style="display: none"
+            >
+              <img
+                width="550"
+                class="background-image"
+                src="/images/utilitybg.png"
+                alt="home-bg"
+              />
+            </div>
             <!-- Floating Icons -->
             <!-- <div class="hidden sm:block">
               <div class="absolute top-[7rem] left-[-2rem]">
@@ -209,7 +233,7 @@
 
         <!-- The Token Content -->
         <div
-          class="tab-content w-full mt-[2rem] text-[#181818] text-[13px] text-center sm:text-start"
+          class="tab-content w-full mt-[2rem] text-[#181818] text-[13px] text-center sm:text-start z-10"
           id="utilityTabContent"
         >
           <h3 class="font-bold text-[17px]">What is Discuss that Coin?</h3>
@@ -234,7 +258,7 @@
 
         <!-- The utility content -->
         <div
-          class="tab-content w-full mt-8 text-[#181818] text-[13px]"
+          class="tab-content w-full mt-8 text-[#181818] text-[13px] z-[10]"
           id="tokenTabContent"
           style="display: none"
         >
