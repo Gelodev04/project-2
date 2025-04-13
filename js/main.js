@@ -16,3 +16,13 @@ buttons.forEach(button => {
     });
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector("header button.sm\\:hidden");
+  const mobileMenu = document.getElementById("mobileMenuDropdown");
+
+  menuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+});

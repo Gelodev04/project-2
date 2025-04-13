@@ -12,7 +12,7 @@
   </head>
   <body>
     <header
-      class="py-[10px] web-width border-b border-b-[#1818181A] sm:border-0"
+      class="py-[10px] web-width border-b-[#1818181A] sm:border-0 relative"
     >
       <div class="flex items-center justify-between">
         <div
@@ -40,7 +40,7 @@
         </div>
 
         <!-- MOBILE MENU -->
-        <div class="cursor-pointer sm:hidden px-4 md:px-0">
+        <button class="cursor-pointer sm:hidden px-4 md:px-0">
           <svg
             width="25"
             viewBox="0 0 24 24"
@@ -63,13 +63,13 @@
               ></path>
             </g>
           </svg>
-        </div>
+        </button>
       </div>
       <nav
-        class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] hidden sm:flex items-center justify-between  text-[12px]"
+        class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] flex items-center justify-between text-[12px]"
       >
         <ul
-          class="flex items-center text-[#18181880] gap-4 px-4 md:px-0"
+          class="sm:flex items-center text-[#18181880] gap-4 px-4 md:px-0 hidden"
         >
           <li>
             <a href="">Home</a>
@@ -88,14 +88,47 @@
           </li>
         </ul>
 
-        <div class="flex gap-1 items-center font-semibold text-[11px]" >
-          <img width="16" src="/images/RTC Nav/twemoji_coin.png" alt="token value"/>
+        <div
+          class="flex gap-1 items-center font-semibold text-[11px] px-5 sm:px-0"
+        >
+          <img
+            width="16"
+            src="/images/RTC Nav/twemoji_coin.png"
+            alt="token value"
+          />
           <span class="">Token Value:</span>
           <span class="text-[#298CDE]">0.35 TON</span>
           <span class="text-[#18181840]">|</span>
           <span class="text-[#00C807]">$0.0006</span>
         </div>
       </nav>
+
+      <!-- dropdown -->
+      <div
+        id="mobileMenuDropdown"
+        class="absolute bg-white z-[99 px-5 w-full hidden text-[13px] z-[99] pb-4 sm:hidden"
+      >
+        <ul class="flex flex-col  divide-y divide-[#18181814]">
+          <li class="py-4 text-[#18181880]"><a href="#">Home</a></li>
+          <li class="py-4 text-[#18181880]"><a href="#">About Us</a></li>
+          <li class="py-4 text-[#18181880]"><a href="#">Utility</a></li>
+          <li class="py-4 text-[#18181880]"><a href="#">Tekonomics</a></li>
+          <li class="py-4 text-[#18181880]"><a href="#">How It Works</a></li>
+        </ul>
+
+        <div class="space-y-2">
+          <button
+              class="bg-[#4AA9F8] text-white py-[11px] px-[20px] rounded-[5px] cursor-pointer text-[11px] w-full"
+            >
+              Use The Bot
+            </button>
+            <button
+              class="text-[#4AA9F8] border-[2px] border-[#4AA9F8]/15 py-[11px] px-[20px] rounded-[5px] text-[11px] cursor-pointer w-full"
+            >
+              Join The Community
+            </button>
+        </div>
+      </div>
     </header>
 
     <!-- Main Content -->
@@ -103,10 +136,9 @@
     <main class="">
       <!-- The token -->
       <div
-  class="tab-content flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4 h-auto sm:h-[100px]"
-  id="utilityTabContent"
->
-
+        class="tab-content flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4 h-auto sm:h-[100px]"
+        id="utilityTabContent"
+      >
         <h1
           class="bg-gradient-to-r from-[#FFAA00] to-[#EF5601] bg-clip-text text-transparent font-[700] text-center text-[28px] leading-tight"
         >
@@ -139,7 +171,7 @@
       <section
         class="flex flex-col w-full items-center web-width relative px-4"
       >
-        <div class="flex flex-col items-center relative">
+        <div class="flex flex-col items-center relative ">
           <div class="button-group">
             <button class="tab-button active" id="utilityTab">
               The Utility
@@ -148,15 +180,10 @@
           </div>
 
           <div class="mt-[0.7rem] relative">
-            <div class="relative h-[300px] tab-content" id="utilityTabContent">
+            <div class="relative tab-content" id="utilityTabContent">
               <!-- Flash image behind -->
-              <img
-              
-                class="absolute z-0 "
-                src="/images/flash.png"
-                alt="flash"
-              />
-            
+              <img class="absolute z-0" src="/images/flash.png" alt="flash" />
+
               <!-- Foreground image (in front) -->
               <img
                 width="500"
@@ -165,15 +192,15 @@
                 alt="home-bg"
               />
             </div>
-            <div class="relative h-[300px] tab-content" id="tokenTabContent" style="display: none">
+
+            <div
+              class="relative tab-content"
+              id="tokenTabContent"
+              style="display: none"
+            >
               <!-- Flash image behind -->
-              <img
-              
-                class="absolute z-0 "
-                src="/images/flash.png"
-                alt="flash"
-              />
-            
+              <img class="absolute z-0" src="/images/flash.png" alt="flash" />
+
               <!-- Foreground image (in front) -->
               <img
                 width="500"
@@ -182,73 +209,12 @@
                 alt="home-bg"
               />
             </div>
-            
-           
-            <!-- Floating Icons -->
-            <!-- <div class="hidden sm:block">
-              <div class="absolute top-[7rem] left-[-2rem]">
-                <img
-                  width="55"
-                  src="/images/floatingicons/icon1.png"
-                  alt="icon1"
-                />
-              </div>
-              <div class="absolute top-[-3.5rem] left-[1.5rem]">
-                <img
-                  width="55"
-                  src="/images/floatingicons/icon2.png"
-                  alt="icon2"
-                />
-              </div>
-              <div class="absolute top-[2.3rem] left-[4.1rem]">
-                <img
-                  width="60"
-                  src="/images/floatingicons/icon3.png"
-                  alt="icon3"
-                />
-              </div>
-              <div class="absolute top-[10rem] left-[11rem]">
-                <img
-                  width="55"
-                  src="/images/floatingicons/icon5.png"
-                  alt="icon4"
-                />
-              </div>
-              <div class="absolute top-[8.5rem] left-[23rem]">
-                <img
-                  width="55"
-                  src="/images/floatingicons/icon6.png"
-                  alt="icon5"
-                />
-              </div>
-              <div class="absolute top-[0.5rem] left-[27rem]">
-                <img
-                  width="55"
-                  src="/images/floatingicons/icon1.png"
-                  alt="icon6"
-                />
-              </div>
-              <div class="absolute top-[10rem] right-[-0.6rem]">
-                <img
-                  width="53"
-                  src="/images/floatingicons/icon7.png"
-                  alt="icon7"
-                />
-              </div>
-              <div class="absolute top-[-3rem] right-[-3.5rem]">
-                <img
-                  width="53"
-                  src="/images/floatingicons/icon8.png"
-                  alt="icon8"
-                />
-              </div>
-            </div> -->
           </div>
         </div>
 
         <!-- The Token Content -->
         <div
-          class="tab-content w-full mt-[2rem] text-[#181818] text-[13px] text-center sm:text-start z-10"
+          class="tab-content w-full mt-[1rem] text-[#181818] text-[13px] text-center sm:text-start z-10"
           id="utilityTabContent"
         >
           <h3 class="font-bold text-[17px]">What is Discuss that Coin?</h3>
@@ -273,7 +239,7 @@
 
         <!-- The utility content -->
         <div
-          class="tab-content w-full mt-8 text-[#181818] text-[13px] z-[10]"
+          class="tab-content w-full mt-[1rem] text-[#181818] text-[13px] z-[10]"
           id="tokenTabContent"
           style="display: none"
         >
