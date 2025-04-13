@@ -88,7 +88,7 @@
         </ul>
 
         <div
-          class="flex gap-1 items-center font-semibold text-[11px] px-5 sm:px-0"
+          class="flex gap-1 items-center font-semibold text-[11px] px-4 "
         >
           <img
             width="16"
@@ -171,49 +171,44 @@
         >
           $DTC: The Token that powers the Community
         </h1>
-        <p class="text-[13px] text-center text-[#282828]">
-          <span class="font-bold">CA:</span>
-          <span>0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3</span>
+        <p class="text-[13px] text-center text-[#282828] wrap-anywhere">
+          <span class="font-bold ">CA:</span>
+         0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3
         </p>
       </div>
 
       <section
-        class="flex flex-col w-full items-center web-width relative px-4"
+        class="flex flex-col w-full items-center web-width relative "
       >
         <div class="flex flex-col items-center relative">
           <div class="button-group">
-            <button class="tab-button active " id="utilityTab">
+            <button class="tab-button active" id="utilityTab">
               The Utility
             </button>
             <button class="tab-button" id="tokenTab">The Token</button>
           </div>
-
-          <div class="mt-[0.7rem] relative">
-            <div class="relative tab-content" id="utilityTabContent">
-              <!-- Flash image behind -->
-              <img class="absolute z-0" src="/images/flash.png" alt="flash" />
-
-              <!-- Foreground image (in front) -->
+          <div class="relative">
+            <div
+              class="relative tab-content w-[400px] mx-auto  sm:w-[500px]   sm:min-h-[485px] h-[240px]"
+              id="utilityTabContent"
+            >
+              <img class="z-0 absolute" src="/images/flash.png" alt="flash" />
               <img
                 width="500"
-                class="relative z-10"
+                class="relative z-10 mx-auto  "
                 src="/images/tokenbg.png"
                 alt="home-bg"
               />
             </div>
-
             <div
-              class="relative tab-content"
+              class="relative tab-content  w-[400px] mx-auto  sm:w-[500px]   sm:min-h-[620px] h-[240px]"
               id="tokenTabContent"
               style="display: none"
             >
-              <!-- Flash image behind -->
               <img class="absolute z-0" src="/images/flash.png" alt="flash" />
-
-              <!-- Foreground image (in front) -->
               <img
                 width="500"
-                class="relative z-10"
+                class="relative z-10 mx-auto"
                 src="/images/utilitybg.png"
                 alt="home-bg"
               />
@@ -223,10 +218,11 @@
 
         <!-- The Token Content -->
         <div
-          class="tab-content w-full mt-[1rem] text-[#181818] text-[13px] text-center sm:text-start z-10"
+          class="tab-content w-full mt-[1rem] text-[#181818] text-[13px]  sm:text-start z-10 sm:absolute bottom-0 px-4"
           id="utilityTabContent"
+          
         >
-          <h3 class="font-bold text-[17px]">What is Discuss that Coin?</h3>
+          <h3 class="font-bold text-[17px] text-center md:text-start">What is Discuss that Coin?</h3>
           <p class="mt-1">
             Every day, thousands of new tokens are launched. But too often,
             their communities are gated, heavily moderated, or even silencing
@@ -248,11 +244,11 @@
 
         <!-- The utility content -->
         <div
-          class="tab-content w-full mt-[1rem] text-[#181818] text-[13px] z-[10]"
+          class="tab-content w-full mt-[1rem] text-[#181818] text-[13px] z-[10] sm:absolute bottom-0 px-4"
           id="tokenTabContent"
           style="display: none"
         >
-          <h3 class="font-bold text-[17px]">Why Should I buy the Token?</h3>
+          <h3 class="font-bold text-[17px] text-center md:text-start">Why Should I buy the Token?</h3>
 
           <p class="mt-2">
             Because we’re not here to hype — we’re here to build.<br />
