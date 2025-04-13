@@ -26,3 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.toggle("hidden");
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll("nav a"); // adjust selector as needed
+  const path = window.location.pathname.toLowerCase();
+
+  links.forEach((link) => {
+    if (link.getAttribute("href").toLowerCase() === path) {
+      link.classList.add("text-[#248ADE]");
+    } else {
+      link.classList.add("text-[#18181880]");
+    }
+  });
+});

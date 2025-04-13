@@ -28,12 +28,13 @@
         </div>
         <div class="space-x-1 sm:block hidden px-4 md:px-0">
           <button
-            class="bg-[#4AA9F8] text-white py-[7px] px-[20px] rounded-[5px] cursor-pointer text-[10px]"
+            class="bg-[#4AA9F8] text-white py-[7px] px-[20px] rounded-[5px] cursor-pointer text-[10px] hover:bg-[hsl(207,93%,68%)] duration-100 ease-out box-border"
           >
             Use The Bot
           </button>
+
           <button
-            class="text-[#4AA9F8] border-[2px] border-[#4AA9F8]/15 py-[6px] px-[20px] rounded-[5px] text-[10px] cursor-pointer"
+            class="text-[#4AA9F8] border-[2px] border-[#4AA9F8]/15 py-[6px] px-[20px] rounded-[5px] text-[10px] cursor-pointer hover:bg-[#4AA9F8]/10 duration-100 ease-out box-border"
           >
             Join The Community
           </button>
@@ -68,23 +69,21 @@
       <nav
         class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] flex items-center justify-between text-[12px]"
       >
-        <ul
-          class="sm:flex items-center text-[#18181880] gap-4 px-4 md:px-0 hidden"
-        >
+        <ul class="sm:flex items-center gap-4 px-4 md:px-0 hidden">
           <li>
-            <a href="">Home</a>
+            <a class="text-[#4AA9F8]" href="/">Home</a>
           </li>
           <li>
-            <a href="">About Us</a>
+            <a class="text-[#18181880]" href="/">About Us</a>
           </li>
-          <li>
-            <a href="">Utility</a>
+          <li class="">
+            <a class="text-[#18181880]" href="/">Utility</a>
           </li>
-          <li>
-            <a href="">Tokenemics</a>
+          <li class="">
+            <a class="text-[#18181880]" href="/">Tokenemics</a>
           </li>
-          <li>
-            <a href="">How To Earn</a>
+          <li class="">
+            <a class="text-[#18181880]" href="/">How To Earn</a>
           </li>
         </ul>
 
@@ -108,25 +107,35 @@
         id="mobileMenuDropdown"
         class="absolute bg-white z-[99 px-5 w-full hidden text-[13px] z-[99] pb-4 sm:hidden"
       >
-        <ul class="flex flex-col  divide-y divide-[#18181814]">
-          <li class="py-4 text-[#18181880]"><a href="#">Home</a></li>
-          <li class="py-4 text-[#18181880]"><a href="#">About Us</a></li>
-          <li class="py-4 text-[#18181880]"><a href="#">Utility</a></li>
-          <li class="py-4 text-[#18181880]"><a href="#">Tekonomics</a></li>
-          <li class="py-4 text-[#18181880]"><a href="#">How It Works</a></li>
+        <ul class="flex flex-col divide-y divide-[#18181814]">
+          <li class="py-4 text-[#18181880]">
+            <a class="text-[#4AA9F8]" href="/">Home</a>
+          </li>
+          <li class="py-4">
+            <a class="text-[#18181880]" href="#">About Us</a>
+          </li>
+          <li class="py-4">
+            <a class="text-[#18181880]" href="#">Utility</a>
+          </li>
+          <li class="py-4">
+            <a class="text-[#18181880]" href="#">Tekonomics</a>
+          </li>
+          <li class="py-4">
+            <a class="text-[#18181880]" href="#">How It Works</a>
+          </li>
         </ul>
 
         <div class="space-y-2">
           <button
-              class="bg-[#4AA9F8] text-white py-[11px] px-[20px] rounded-[5px] cursor-pointer text-[11px] w-full"
-            >
-              Use The Bot
-            </button>
-            <button
-              class="text-[#4AA9F8] border-[2px] border-[#4AA9F8]/15 py-[11px] px-[20px] rounded-[5px] text-[11px] cursor-pointer w-full"
-            >
-              Join The Community
-            </button>
+            class="bg-[#4AA9F8] text-white py-[11px] px-[20px] rounded-[5px] cursor-pointer text-[11px] w-full hover:bg-[hsl(207,93%,68%)] duration-100 ease-out"
+          >
+            Use The Bot
+          </button>
+          <button
+            class="text-[#4AA9F8] border-[2px] border-[#4AA9F8]/15 py-[11px] px-[20px] rounded-[5px] text-[11px] cursor-pointer w-full hover:bg-[#4AA9F8]/10 duration-100 ease-out box-border"
+          >
+            Join The Community
+          </button>
         </div>
       </div>
     </header>
@@ -171,9 +180,9 @@
       <section
         class="flex flex-col w-full items-center web-width relative px-4"
       >
-        <div class="flex flex-col items-center relative ">
+        <div class="flex flex-col items-center relative">
           <div class="button-group">
-            <button class="tab-button active" id="utilityTab">
+            <button class="tab-button active " id="utilityTab">
               The Utility
             </button>
             <button class="tab-button" id="tokenTab">The Token</button>
