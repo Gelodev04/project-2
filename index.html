@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="icon" href="/images/header/logo.ico" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header
+      class="py-[10px] web-width border-b-[#1818181A] sm:border-0 relative"
+    >
+      <div class="flex items-center justify-between">
+        <div
+          class="flex items-center gap-1 font-[700] text-[20px] px-4 md:px-0"
+        >
+          <img
+            width="40"
+            src="/images/header/logo.png"
+            alt="Logo"
+            class="logo"
+          />
+          <h1 class="font-grotesk">DiscussThatCoin</h1>
+        </div>
+        <div class="space-x-1 sm:block hidden px-4 md:px-0">
+          <button
+            class="bg-[#4AA9F8] text-white py-[7px] px-[20px] rounded-[5px] cursor-pointer text-[10px] hover:bg-[hsl(207,93%,68%)] duration-100 ease-out box-border"
+          >
+            Buy our Token
+          </button>
+
+          <button
+            class="text-[#4AA9F8] border-[2px] border-[#4AA9F8]/15 py-[6px] px-[20px] rounded-[5px] text-[10px] cursor-pointer hover:bg-[#4AA9F8]/10 duration-100 ease-out box-border"
+          >
+            Join The Community
+          </button>
+        </div>
+
+        <!-- MOBILE menu -->
+        <button class="cursor-pointer sm:hidden px-4 md:px-0">
+          <svg
+            width="25"
+            viewBox="0 0 24 24"
+            fill="#248ADE"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="#248ADE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+      <nav
+        class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] flex items-center justify-between text-[12px]"
+      >
+        <ul class="sm:flex items-center gap-4 px-4 md:px-0 hidden">
+          <li>
+            <a class="text-[#4AA9F8]" href="/">Home</a>
+          </li>
+          <li>
+            <a class="text-[#18181880]" href="/">About Us</a>
+          </li>
+          <li class="">
+            <a class="text-[#18181880]" href="/">Utility</a>
+          </li>
+          <li class="">
+            <a class="text-[#18181880]" href="/">Tokenemics</a>
+          </li>
+          <li class="">
+            <a class="text-[#18181880]" href="/">How To Earn</a>
+          </li>
+        </ul>
+
+        <div
+          class="flex gap-1 items-center font-semibold text-[11px] px-4 "
+        >
+          <img
+            width="16"
+            src="/images/RTC Nav/twemoji_coin.png"
+            alt="token value"
+          />
+          <span class="">$DTC Value:</span>
+          <span class="text-[#298CDE]">0.35 TON</span>
+          <span class="text-[#18181840]">|</span>
+          <span class="text-[#00C807]">$0.0006</span>
+        </div>
+      </nav>
+
+      <!-- dropdown -->
+      <div
+        id="mobileMenuDropdown"
+        class="absolute bg-white z-[99 px-5 w-full hidden text-[13px] z-[99] pb-4 sm:hidden"
+      >
+        <ul class="flex flex-col divide-y divide-[#18181814]">
+          <li class="py-4 text-[#18181880]">
+            <a class="text-[#4AA9F8]" href="/">Home</a>
+          </li>
+          <li class="py-4">
+            <a class="text-[#18181880]" href="#">About Us</a>
+          </li>
+          <li class="py-4">
+            <a class="text-[#18181880]" href="#">Utility</a>
+          </li>
+          <li class="py-4">
+            <a class="text-[#18181880]" href="#">Tekonomics</a>
+          </li>
+          <li class="py-4">
+            <a class="text-[#18181880]" href="#">How It Works</a>
+          </li>
+        </ul>
+
+        <div class="space-y-2">
+          <button
+            class="bg-[#4AA9F8] text-white py-[11px] px-[20px] rounded-[5px] cursor-pointer text-[11px] w-full hover:bg-[hsl(207,93%,68%)] duration-100 ease-out"
+          >
+            Buy our Token
+          </button>
+          <button
+            class="text-[#4AA9F8] border-[2px] border-[#4AA9F8]/15 py-[11px] px-[20px] rounded-[5px] text-[11px] cursor-pointer w-full hover:bg-[#4AA9F8]/10 duration-100 ease-out box-border"
+          >
+            Join The Community
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+
+    <main class="">
+      <!-- The token -->
+      <div
+        class="tab-content flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4 h-auto sm:h-[100px]"
+        id="utilityTabContent"
+      >
+        <h1
+          class="bg-gradient-to-r from-[#FFAA00] to-[#EF5601] bg-clip-text text-transparent font-[700] text-center text-[28px] leading-tight"
+        >
+          This Telegram bot creates a community for every coin out there
+        </h1>
+        <p class="text-[13px] text-center text-[#282828]">
+          Your Voice, Your Gain. Rate tokens & earn rewards. Get Community and
+          AI-Powered Insights from each tokens community reviews built on Ton
+          Network.
+        </p>
+      </div>
+
+      <!-- The utility -->
+      <div
+        class="tab-content flex flex-col items-center gap-1 max-w-[550px] mx-auto my-[1rem] px-4 h-auto sm:h-[100px]"
+        id="tokenTabContent"
+        style="display: none"
+      >
+        <h1
+          class="bg-gradient-to-r from-[#FFAA00] to-[#EF5601] bg-clip-text text-transparent font-[700] text-center text-[28px] leading-tight"
+        >
+          $DTC: The Token that powers the Community
+        </h1>
+        <p class="text-[13px] text-center text-[#282828] wrap-anywhere">
+          <span class="font-bold ">CA:</span>
+         0xCAAE2A2F939F51d97CdFa9A86e79e3F085b799f3
+        </p>
+      </div>
+
+      <section
+        class="flex flex-col w-full items-center web-width relative "
+      >
+        <div class="flex flex-col items-center relative">
+          <div class="button-group">
+            <button class="tab-button active" id="utilityTab">
+              The Utility
+            </button>
+            <button class="tab-button" id="tokenTab">The Token</button>
+          </div>
+          <div class="relative">
+            <div
+              class="relative tab-content w-[400px] mx-auto  sm:w-[500px]   sm:min-h-[485px] h-[240px]"
+              id="utilityTabContent"
+            >
+              <img class="z-0 absolute" src="/images/flash.png" alt="flash" />
+              <img
+                width="500"
+                class="relative z-10 mx-auto  "
+                src="/images/tokenbg.png"
+                alt="home-bg"
+              />
+            </div>
+            <div
+              class="relative tab-content  w-[400px] mx-auto  sm:w-[500px]   sm:min-h-[620px] h-[240px]"
+              id="tokenTabContent"
+              style="display: none"
+            >
+              <img class="absolute z-0" src="/images/flash.png" alt="flash" />
+              <img
+                width="500"
+                class="relative z-10 mx-auto"
+                src="/images/utilitybg.png"
+                alt="home-bg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- The Token Content -->
+        <div
+          class="tab-content w-full mt-[1rem] text-[#181818] text-[13px]  sm:text-start z-10 sm:absolute bottom-0 px-4"
+          id="utilityTabContent"
+          
+        >
+          <h3 class="font-bold text-[17px] text-center md:text-start">What is Discuss that Coin?</h3>
+          <p class="mt-1">
+            Every day, thousands of new tokens are launched. But too often,
+            their communities are gated, heavily moderated, or even silencing
+            members who speak the truth.
+          </p>
+          <h4 class="font-bold text-[14px] mt-3">
+            Discuss That Coin changes that.
+          </h4>
+          <p>
+            Our platform creates a decentralized, open space for each
+            token—where anyone can share honest opinions without fear of being
+            banned or censored.
+          </p>
+          <p class="mt-3">
+            It's about real feedback, from real people. No filters. No fear.
+            Just truth from the community itself.
+          </p>
+        </div>
+
+        <!-- The utility content -->
+        <div
+          class="tab-content w-full mt-[1rem] text-[#181818] text-[13px] z-[10] sm:absolute bottom-0 px-4"
+          id="tokenTabContent"
+          style="display: none"
+        >
+          <h3 class="font-bold text-[17px] text-center md:text-start">Why Should I buy the Token?</h3>
+
+          <p class="mt-2">
+            Because we’re not here to hype — we’re here to build.<br />
+
+            In a space full of empty promises and flashy pitches, DTC stands for
+            something real: community, transparency, and long-term vision.
+          </p>
+
+          <p class="mt-4">
+            We’re not asking you to invest blindly. We’re asking you to see the
+            value.
+          </p>
+
+          <p class="mt-4">
+            Check out our Ai - bot on Telegram. Dive into the community.
+            Experience the tools we’ve already built — AI-powered insights, real
+            token reviews, and a first-of-its-kind ecosystem on the TON
+            Network.<br />
+            If you believe in what we’re creating, your support through DTC
+            tokens fuels our mission:<br />
+            To become the go-to community layer of Web3 — not just today, but 5,
+            10 years from now.
+          </p>
+
+          <p class="mt-4">
+            This is your chance to be part of something early. Something built
+            different.<br />
+            Not just another token — but a real utility, with real people behind
+            it.
+          </p>
+
+          <p class="">
+            DTC isn’t just a project. It’s a movement.<br />
+            And if you’ve been watching, you already know — we’re just getting
+            started.
+          </p>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+
+      <section class="web-width text-[13px] text-[#282828] pb-[2rem] px-4">
+        <!-- The Token Content -->
+        <div
+          class="flex flex-col items-center tab-content text-center"
+          id="utilityTabContent"
+        >
+          <h1 class="font-bold text-[17px] mt-[2rem] mb-[2rem]">
+            How it works?
+          </h1>
+          <ul
+            class="flex flex-wrap justify-between items-start relative gap-[3rem]"
+          >
+            <li
+              class="flex flex-col items-center flex-1 min-w-[150px] relative"
+            >
+              <div
+                class="bg-[#9672FF] text-white size-[45px] flex items-center justify-center rounded-[10px]"
+              >
+                1
+              </div>
+              <h3 class="font-semibold mt-2">Find a Token</h3>
+              <p class="text-[#333333] text-[10px] max-w-[180px]">
+                Simply paste a contract address, of your choice of crypto token.
+              </p>
+              <!-- Divider -->
+              <div
+                class="absolute top-[1.4rem] right-[-4.3rem] w-[50%] border-t border-[#4DDFFD] border-dashed md:block hidden"
+              >
+                <!-- Left Circle -->
+                <div
+                  class="absolute -left-[4px] top-[-3px] w-[6px] h-[6px] bg-[#9672FF] rounded-full"
+                ></div>
+                <!-- Right Circle -->
+                <div
+                  class="absolute -right-[4px] top-[-3px] w-[6px] h-[6px] bg-[#4DDFFD] rounded-full"
+                ></div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col items-center text-center flex-1 min-w-[150px] relative"
+            >
+              <div
+                class="bg-[#4DDFFD] text-white size-[45px] flex items-center justify-center rounded-[10px]"
+              >
+                2
+              </div>
+              <h3 class="font-semibold mt-2">See Insights</h3>
+              <p class="text-[#333333] text-[10px] max-w-[190px]">
+                Join or Read what the community is saying. Real-time upvotes,
+                downvotes, and detailed comments=
+              </p>
+              <!-- Divider -->
+              <div
+                class="absolute top-[1.4rem] right-[-4.3rem] w-[50%] border-t border-[#4DDFFD] border-dashed md:block hidden"
+              >
+                <!-- Left Circle -->
+                <div
+                  class="absolute -left-[4px] top-[-3px] w-[6px] h-[6px] bg-[#4DDFFD] rounded-full"
+                ></div>
+                <!-- Right Circle -->
+                <div
+                  class="absolute -right-[4px] top-[-3px] w-[6px] h-[6px] bg-[#FFAA00] rounded-full"
+                ></div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col items-center text-center flex-1 min-w-[150px]"
+            >
+              <div
+                class="bg-[#FBB72E] text-white size-[45px] flex items-center justify-center rounded-[10px]"
+              >
+                3
+              </div>
+              <h3 class="font-semibold mt-2">Join Community</h3>
+              <p class="text-[#333333] text-[10px] max-w-[180px]">
+                Give valuable insight get likes and our Ai system would simply
+                reward you Points you can convert to tokens
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- The utility content -->
+
+        <div
+          class="flex flex-col items-center tab-content text-center"
+          id="tokenTabContent"
+          style="display: none"
+        >
+          <h1 class="font-bold text-[17px] mt-[2rem] mb-[2rem]">
+            How To Buy Our Token?
+          </h1>
+          <ul
+            class="flex flex-wrap justify-between items-start relative gap-[3rem]"
+          >
+            <li
+              class="flex flex-col items-center text-center flex-1 min-w-[150px] relative"
+            >
+              <div
+                class="bg-[#9672FF] text-white size-[45px] flex items-center justify-center rounded-[10px]"
+              >
+                1
+              </div>
+              <h3 class="font-semibold mt-2">Deposit Your Chosen Crypto</h3>
+              <p class="text-[#333333] text-[10px] max-w-[180px]">
+                Create a Blum account and deposit your chosen cryptocurrency
+                into your Blum wallet.
+              </p>
+              <!-- Divider -->
+              <div
+                class="absolute top-[1.4rem] right-[-4.3rem] w-[50%] border-t border-[#4DDFFD] border-dashed md:block hidden"
+              >
+                <!-- Left Circle -->
+                <div
+                  class="absolute -left-[4px] top-[-3px] w-[6px] h-[6px] bg-[#9672FF] rounded-full"
+                ></div>
+                <!-- Right Circle -->
+                <div
+                  class="absolute -right-[4px] top-[-3px] w-[6px] h-[6px] bg-[#4DDFFD] rounded-full"
+                ></div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col items-center text-center flex-1 min-w-[150px] relative"
+            >
+              <div
+                class="bg-[#4DDFFD] text-white size-[45px] flex items-center justify-center rounded-[10px]"
+              >
+                2
+              </div>
+              <h3 class="font-semibold mt-2">Search DTC Token</h3>
+              <p class="text-[#333333] text-[10px] max-w-[180px]">
+                Search for the DTC Token trading pair, enter your desired
+                purchase amount and place a buy order.
+              </p>
+              <!-- Divider -->
+              <div
+                class="absolute top-[1.4rem] right-[-4.3rem] w-[50%] border-t border-[#4DDFFD] border-dashed md:block hidden"
+              >
+                <!-- Left Circle -->
+                <div
+                  class="absolute -left-[4px] top-[-3px] w-[6px] h-[6px] bg-[#4DDFFD] rounded-full"
+                ></div>
+                <!-- Right Circle -->
+                <div
+                  class="absolute -right-[4px] top-[-3px] w-[6px] h-[6px] bg-[#FFAA00] rounded-full"
+                ></div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col items-center text-center flex-1 min-w-[150px]"
+            >
+              <div
+                class="bg-[#FBB72E] text-white size-[45px] flex items-center justify-center rounded-[10px]"
+              >
+                3
+              </div>
+              <h3 class="font-semibold mt-2">Confirm & Receive Your DTC</h3>
+              <p class="text-[#333333] text-[10px] max-w-[180px]">
+                Confirm the transaction and view your new tokens in your Blum
+                wallet. It’s That simple.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MOBILE GET STARTED -->
+      <div class="sm:hidden border-t-[2px] border-[#18181814] py-[12px]">
+        <div class="flex items-center gap-2 justify-center">
+          <button class="cursor-pointer">
+            <svg
+              width="25"
+              viewBox="0 0 24 24"
+              fill="#181818"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="Menu / Close_SM">
+                  <path
+                    id="Vector"
+                    d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16"
+                    stroke="#181818"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <div class="flex items-center gap-1">
+            <img width="42" class="" src="/images/header/logo.png" alt="logo" />
+            <div>
+              <p
+                class="text-[#181818] font-medium text-[15px] whitespace-nowrap"
+              >
+                Continue in Telegram Bot
+              </p>
+              <p class="text-[#18181880] text-[13px] whitespace-nowrap">
+                Join our community
+              </p>
+            </div>
+            <button
+              class="bg-[#248ADE] text-white py-[9px] px-4 text-[13px] rounded-[5px] ml-2 cursor-pointer whitespace-nowrap"
+            >
+              Start Bot
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <footer
+        class="text-[70%] py-[12px] border-t-[2px] border-[#18181814] hidden sm:block px-4"
+      >
+        <div
+          class="web-width flex justify-between w-full gap-[50px] items-start"
+        >
+          <div class="w-1/3 space-y-[5px]">
+            <div class="flex items-center gap-1 font-[700] text-[18px]">
+              <img
+                width="33"
+                src="/images/header/logo.png"
+                alt="Logo"
+                class="logo"
+              />
+              <h1 class="font-grotesk">DiscussThatCoin</h1>
+            </div>
+            <p class="text-[#18181880]">
+              Lorem ipsum dolor sit amet consectetur. Placerat auctor dignissim.
+            </p>
+          </div>
+          <ul
+            class="flex items-center text-[#18181880] w-2/3 justify-end mt-[10px]"
+          >
+            <li class="px-3"><a href="">About Us</a></li>
+            <li class="border-l px-3 border-[#18181880]">
+              <a href="">How To Earn</a>
+            </li>
+            <li class="border-l px-3 border-[#18181880]">
+              <a href="">How It Works</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
