@@ -41,79 +41,208 @@
         </div>
 
         <!-- MOBILE MENU -->
-        <button class="cursor-pointer sm:hidden px-4 md:px-0">
-          <svg
-            width="25"
-            viewBox="0 0 24 24"
-            fill="#248ADE"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
+
+        <svg
+          class="cursor-pointer mr-3 sm:hidden"
+          id="burgerIcon"
+          width="25"
+          viewBox="0 0 24 24"
+          fill="#248ADE"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="#248ADE"
+              stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M4 6H20M4 12H20M4 18H20"
-                stroke="#248ADE"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </g>
-          </svg>
-        </button>
+            ></path>
+          </g>
+        </svg>
       </div>
       <nav
         class="border-t border-b border-[#18181880]/20 py-[6px] mt-[10px] flex items-center justify-between text-[12px]"
       >
-      <ul class="sm:flex items-center gap-4 px-4 md:px-0 hidden">
-        <li>
-          <a class="text-[#4AA9F8]" href="/">Home</a>
-        </li>
-        <li class="relative" onclick="toggleDropdown('aboutDropdown')">
-          <div class="flex items-center  cursor-pointer" >
-            <a class="text-[#18181880] cursor-pointer" >About us</a>
-            <svg   class="size-4 cursor-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-          </div>
-          <div id="aboutDropdown" class="hidden absolute left-0 mt-2 w-[130px] bg-white shadow-lg rounded divide-y divide-gray-200  ">
-            <a href="/" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]">Our Team</a>
-            <a href="/" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]">Our Mission</a>
-          </div>
-        </li>
-        <li class="relative" onclick="toggleDropdown('utilityDropdown')">
-          <div class="flex items-center  cursor-pointer" >
-            <a class="text-[#18181880] cursor-pointer" >Utility</a>
-            <svg   class="size-4 cursor-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-          </div>
-          <div id="utilityDropdown" class="hidden absolute left-0 mt-2 w-[130px] bg-white shadow-lg rounded divide-y divide-gray-200">
-            <a href="/" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]">Feature 1</a>
-            <a href="/" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]">Feature 2</a>
-          </div>
-        </li>
-        <li class="relative" onclick="toggleDropdown('tokenemicsDropdown')">
-          <div class="flex items-center cursor-pointer" >
-            <a class="text-[#18181880] cursor-pointer" >Tokenemics</a>
-            <svg   class="size-4 cursor-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-          </div>
-          <div id="tokenemicsDropdown" class="hidden absolute left-0 mt-2 w-[130px] bg-white shadow-lg rounded divide-y divide-gray-200">
-            <a href="/" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]">Details</a>
-            <a href="/" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]">Distribution</a>
-          </div>
-        </li>
-        <li class="relative" onclick="toggleDropdown('earnDropdown')">
-          <div class="flex items-center cursor-pointer" >
-            <a class="text-[#18181880] cursor-pointer" >How to earn</a>
-            <svg   class="size-4 cursor-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-          </div>
-          <div id="earnDropdown" class="hidden absolute left-0 mt-2 w-[130px] bg-white shadow-lg rounded divide-y divide-gray-200">
-            <a href="/" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]">Method 1</a>
-            <a href="/" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]">Method 2</a>
-          </div>
-        </li>
-      </ul>
+        <ul class="sm:flex items-center gap-4 px-4 md:px-0 hidden">
+          <li>
+            <a class="text-[#18181880]" href="/">Home</a>
+          </li>
+          <li class="relative" onclick="toggleDropdown('aboutDropdown')">
+            <div class="flex items-center cursor-pointer">
+              <a class="text-[#18181880] cursor-pointer">About us</a>
+              <svg
+                class="size-4 cursor-pointer"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M7 10L12 15L17 10"
+                    stroke="#000000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div
+              id="aboutDropdown"
+              class="hidden absolute left-0 mt-2 w-[130px] bg-white shadow-lg rounded divide-y divide-gray-200"
+            >
+              <a
+                href="/"
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]"
+                >Our Team</a
+              >
+              <a
+                href="/"
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]"
+                >Our Mission</a
+              >
+            </div>
+          </li>
+          <li class="relative" onclick="toggleDropdown('utilityDropdown')">
+            <div class="flex items-center cursor-pointer">
+              <a class="text-[#18181880] cursor-pointer">Utility</a>
+              <svg
+                class="size-4 cursor-pointer"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M7 10L12 15L17 10"
+                    stroke="#000000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div
+              id="utilityDropdown"
+              class="hidden absolute left-0 mt-2 w-[130px] bg-white shadow-lg rounded divide-y divide-gray-200"
+            >
+              <a
+                href="/"
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]"
+                >Feature 1</a
+              >
+              <a
+                href="/"
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]"
+                >Feature 2</a
+              >
+            </div>
+          </li>
+          <li class="relative" onclick="toggleDropdown('tokenemicsDropdown')">
+            <div class="flex items-center cursor-pointer">
+              <a class="text-[#18181880] cursor-pointer">Tokenemics</a>
+              <svg
+                class="size-4 cursor-pointer"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M7 10L12 15L17 10"
+                    stroke="#000000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div
+              id="tokenemicsDropdown"
+              class="hidden absolute left-0 mt-2 w-[130px] bg-white shadow-lg rounded divide-y divide-gray-200"
+            >
+              <a
+                href="/"
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]"
+                >Details</a
+              >
+              <a
+                href="/"
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]"
+                >Distribution</a
+              >
+            </div>
+          </li>
+          <li class="relative" onclick="toggleDropdown('earnDropdown')">
+            <div class="flex items-center cursor-pointer">
+              <a class="text-[#18181880] cursor-pointer">How to earn</a>
+              <svg
+                class="size-4 cursor-pointer"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M7 10L12 15L17 10"
+                    stroke="#000000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div
+              id="earnDropdown"
+              class="hidden absolute left-0 mt-2 w-[130px] bg-white shadow-lg rounded divide-y divide-gray-200"
+            >
+              <a
+                href="/"
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]"
+                >Method 1</a
+              >
+              <a
+                href="/"
+                class="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-[11px]"
+                >Method 2</a
+              >
+            </div>
+          </li>
+        </ul>
 
         <div class="flex gap-1 items-center font-semibold text-[11px] px-4">
           <img
@@ -213,7 +342,7 @@
           </div>
           <div class="relative">
             <div
-              class="relative tab-content w-[400px] mx-auto sm:w-[500px] sm:min-h-[575px] h-[240px] "
+              class="relative tab-content w-[400px] mx-auto sm:w-[500px] sm:min-h-[575px] h-[240px]"
               id="utilityTabContent"
             >
               <img class="z-0 absolute" src="/images/flash.png" alt="flash" />
@@ -249,12 +378,14 @@
             Ain’t You Tired Of
           </h3>
           <p class="mt-1">
-            Communities banning honest questions?<br/> Admins and moderators
-            silencing warnings — and hiding the truth?<br/> Founders rugging coins
-            and trying to do the same again?<br/> Moderators and their teams
-            controlling the narrative while investors get blindsided?<br/> As a dev,
-            having to build your own community from scratch<br/> investing time
-            growing a community and not been sure if your coin will make it?<br/>
+            Communities banning honest questions?<br />
+            Admins and moderators silencing warnings — and hiding the truth?<br />
+            Founders rugging coins and trying to do the same again?<br />
+            Moderators and their teams controlling the narrative while investors
+            get blindsided?<br />
+            As a dev, having to build your own community from scratch<br />
+            investing time growing a community and not been sure if your coin
+            will make it?<br />
             It’s time for a better way.
           </p>
           <h4 class="font-bold text-[14px] mt-3">

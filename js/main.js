@@ -18,14 +18,18 @@ buttons.forEach(button => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const menuButton = document.querySelector("header button.sm\\:hidden");
+function toggleMobileMenu() {
   const mobileMenu = document.getElementById("mobileMenuDropdown");
+  mobileMenu.classList.toggle("hidden");
+}
 
-  menuButton.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
+const burgerIcon = document.getElementById('burgerIcon');
+  const mobileMenu = document.getElementById('mobileMenuDropdown');
+
+  // Add click event listener to toggle the dropdown menu
+  burgerIcon.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
   });
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("nav a"); // adjust selector as needed
