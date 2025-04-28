@@ -39,3 +39,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+function toggleDropdown(dropdownId) {
+ 
+  const dropdowns = document.querySelectorAll('.absolute');
+ 
+ 
+  dropdowns.forEach(dropdown => {
+    if (dropdown.id !== dropdownId) {
+      dropdown.classList.add('hidden');
+    }
+  });
+
+  
+  const dropdown = document.getElementById(dropdownId);
+  dropdown.classList.toggle('hidden');
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.cursor-pointer')) {
+    const dropdowns = document.querySelectorAll('.absolute');
+    dropdowns.forEach(dropdown => {
+      dropdown.classList.add('hidden');
+    });
+  }
+}
