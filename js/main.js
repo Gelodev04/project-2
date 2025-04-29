@@ -69,3 +69,17 @@ window.onclick = function(event) {
   }
 }
 
+// languages switch dropdown
+const toggle = document.getElementById("langDropdownToggle");
+const dropdown = document.getElementById("langDropdown");
+
+toggle.addEventListener("click", () => {
+  dropdown.classList.toggle("hidden");
+});
+
+// Optional: Click outside to close
+document.addEventListener("click", function (event) {
+  if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+    dropdown.classList.add("hidden");
+  }
+});
